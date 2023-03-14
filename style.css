@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
 body {
     background-color: black;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
 }
 
 .page-container {
@@ -27,30 +31,384 @@ body {
 
 .page-row {
     width: 80%;
-    background-color: green;
     height: 120px;
     margin-inline: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .page-item {
     width: 120px;
     height: 120px;
-    background-color: purple;
     transform-style: preserve-3d;
     transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+    border-radius: 15px;
 }
 
-.work {
+.page-item-content {
+    width: 80%;
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10%;
+    transform: translateZ(10px);
+}
+
+.page-item-title {
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding-top: 5%;
+    font-size: 1em;
+    text-align: center;
+    background-color: rgba(25, 25, 25, .4);
+    position: relative;
+    transform: translateZ(15px) translateY(-40px);
+}
+
+.work-container {
     background-color: rgb(41, 45, 62);
 }
 
-.play {
+.work {
+    background-color: rgb(58, 64, 88);
+}
+
+.work:hover {
+    background-color: rgb(68, 74, 99);
+    cursor: pointer;
+}
+
+.play-container {
     background-color: rgb(17, 17, 17);
 }
 
-.test {
-    background-image: url("assets/americafirst.png");
-    background-size: contain;
+.play {
+    background-color: rgb(65, 65, 65);
+}
+
+.play:hover {
+    background-color: rgb();
+    cursor: pointer;
+}
+
+.connectwise {
+    background-image: url("assets/screen_connect.png");
+}
+
+.barracuda {
+    background-image: url("assets/barracuda.png");
+}
+
+.thycotic {
+    background-image: url("assets/thycotic.png");
+}
+
+.wordpress {
+    background-image: url("assets/wordpress.png");
+}
+
+.microsoft {
+    background-image: url("assets/microsoft.png");
+}
+
+.mural {
+    background-image: url("assets/mural.png");
+}
+
+.sketchup{
+    background-image: url("assets/sketchup.png");
+}
+
+.goodsync{
+    background-image: url("assets/goodsync.png");
+}
+
+.zoom{
+    background-image: url("assets/zoom.png");
+}
+
+.canvas{
+    background-image: url("assets/canvas.png");
+}
+
+.citrix{
+    background-image: url("assets/citrix.png");
+}
+
+.malwarebytes{
+    background-image: url("assets/malwarebytes.png");
+}
+
+.vmware{
+    background-image: url("assets/vmware.png");
+}
+
+.duo{
+    background-image: url("assets/duo.png");
+}
+
+.autodesk{
+    background-image: url("assets/autodesk.png");
+}
+
+.clarity{
+    background-image: url("assets/clarity.png");
+}
+
+.wfhdoc{
+    background-image: url("assets/google.png");
+}
+
+.github{
+    background-image: url("assets/github.png");
+}
+
+.nexus{
+    background-image: url("assets/nexus_square.png");
+}
+
+.s2{
+    background-image: url("assets/s2.png");
+}
+
+.graywater{
+    background-image: url("assets/graywater.png");
+}
+
+.pelican{
+    background-image: url("assets/pelican.png");
+}
+
+.sharefile{
+    background-image: url("assets/sharefile.png");
+}
+
+.vantagepoint{
+    background-image: url("assets/vantagepoint.png");
+}
+
+.nslookup{
+    background-image: url("assets/nslookup.png");
+}
+
+.bluebeam{
+    background-image: url("assets/bluebeam.png");
+}
+
+.knowbe4{
+    background-image: url("assets/knowbe4.png");
+}
+
+.purpleair{
+    background-image: url("assets/purpleair.png");
+}
+
+.virtualkeypad{
+    background-image: url("assets/virtualkeypad.png");
+}
+
+.emtrain{
+    background-image: url("assets/emtrain.png");
+}
+
+.hydrawise{
+    background-image: url("assets/hydrawise.png");
+}
+
+.buildingevent{
+    background-image: url('assets/google.png');
+}
+
+.inhabit{
+    background-image: url('assets/inhabit.png');
+}
+
+.viewglass{
+    background-image: url('assets/view.png');
+}
+
+.twingate{
+    background-image: url('assets/twingate.png');
+}
+
+.webmail{
+    background-image: url('assets/outlook.png');
+}
+
+.entview{
+    background-image: url('assets/lutron.png');
+}
+
+.vendor{
+    background-image: url('assets/google.png');
+}
+
+.youtube{
+    background-image: url('assets/youtube.png');
+}
+
+.gmail{
+    background-image: url('assets/gmail.png');
+}
+
+.drive{
+    background-image: url('assets/drive.png');
+}
+
+.budget{
+    background-image: url('assets/google.png');
+}
+
+.amazon{
+    background-image: url('assets/amazon.png');
+}
+
+.allstate{
+    background-image: url('assets/allstate.png');
+}
+
+.americafirst{
+    background-image: url('assets/americafirst.png');
+}
+
+.chewy{
+    background-image: url('assets/chewy.png');
+}
+
+.delta{
+    background-image: url('assets/delta.png');
+}
+
+.facebook{
+    background-image: url('assets/facebook.png');
+}
+
+.figma{
+    background-image: url('assets/figma.png');
+}
+
+.godaddy{
+    background-image: url('assets/godaddy.png');
+}
+
+.gusto{
+    background-image: url('assets/gusto.png');
+}
+
+.hbomax{
+    background-image: url('assets/hbomax.png');
+}
+
+.ifixit{
+    background-image: url('assets/ifixit.png');
+}
+
+.intuit{
+    background-image: url('assets/turbotax.png');
+}
+
+.ksl{
+    background-image: url('assets/ksl.png');
+}
+
+.linkedin{
+    background-image: url('assets/linkedin.png');
+}
+
+.mountainamerica{
+    background-image: url('assets/macu.png');
+}
+
+.mereo{
+    background-image: url('assets/mereo.png');
+}
+
+.synchrony{
+    background-image: url('assets/synchrony.png');
+}
+
+.nebula{
+    background-image: url('assets/nebula.png');
+}
+
+.nfl{
+    background-image: url('assets/nfl.png');
+}
+
+.raiders{
+    background-image: url('assets/raiders.png');
+}
+
+.nike{
+    background-image: url('assets/nike.png');
+}
+
+.pluralsight{
+    background-image: url('assets/pluralsight.png');
+}
+
+.principal{
+    background-image: url('assets/principal.png');
+}
+
+.questar{
+    background-image: url('assets/dominion.png');
+}
+
+.cedar{
+    background-image: url('assets/cedar.png');
+}
+
+.rockymountain{
+    background-image: url('assets/power.png');
+}
+
+.roku{
+    background-image: url('assets/roku.png');
+}
+
+.robinhood{
+    background-image: url('assets/robinhood.png');
+}
+
+.snapchat{
+    background-image: url('assets/snapchat.png');
+}
+
+.steam{
+    background-image: url('assets/steam.png');
+}
+
+.ticket{
+    background-image: url('assets/ticketmaster.png');
+}
+
+.upgrade{
+    background-image: url('assets/upgrade.png');
+}
+
+.w3schools{
+    background-image: url('assets/w3schools.png');
+}
+
+.xfinity{
+    background-image: url('assets/xfinity.png');
+}
+
+.hrblock{
+    background-image: url('assets/hrblock.png');
+}
+
+.replit{
+    background-image: url('assets/replit.png');
+}
+
+.accuweather{
+    background-image: url('assets/accuweather.png');
+}
+
+.habitica{
+    background-image: url('assets/habitica.png');
 }
