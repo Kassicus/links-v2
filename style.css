@@ -85,11 +85,11 @@ body {
 }
 
 .play {
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(30, 30, 30);
 }
 
 .play:hover {
-    background-color: rgb();
+    background-color: rgb(40, 40, 40);
     cursor: pointer;
 }
 

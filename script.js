@@ -12,11 +12,11 @@ function rotateElement(event, element) {
 
     var rect = element.getBoundingClientRect();
 
-    const elementX = rect.left + 60;
-    const elementY = rect.top + 60;
+    var elementX = rect.left + 60;
+    var elementY = rect.top + 60;
 
-    var offsetX = Math.min(Math.max(parseInt(((x - elementX) / elementX) * 45), -60), 60);
-    var offsetY = Math.min(Math.max(parseInt(-((y - elementY) / elementY) * 45), -60), 60);
+    var offsetX = Math.min(Math.max(parseInt(((x - elementX) / elementX) * 45), -20), 20);
+    var offsetY = Math.min(Math.max(parseInt(-((y - elementY) / elementY) * 45), -20), 20);
 
     element.style.setProperty("--rotateX", offsetX + "deg");
     element.style.setProperty("--rotateY", offsetY + "deg");
